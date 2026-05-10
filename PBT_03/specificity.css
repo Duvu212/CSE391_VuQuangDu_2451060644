@@ -1,0 +1,28 @@
+/* 1. Universal Selector (Thấp nhất: 0,0,0) */
+* { color: #ccc; }
+
+/* 2. Element Selector (0,0,1) */
+p { color: #636e72; }
+
+/* 3. Class Selector (0,1,0) */
+.status-text { color: #2d3436; }
+
+/* 4. Combined Class (0,2,0) */
+.status-text.delivery-now { color: #e17055; }
+
+/* 5. Descendant Selector (0,2,1) */
+body .status-text.delivery-now { color: #d63031; }
+
+/* 6. ID Selector (1,0,0) */
+#order-status { color: #0984e3; }
+
+/* 7. Element + ID (1,0,1) */
+p#order-status { color: #6c5ce7; }
+
+/* 8. ID + Class (1,1,0) */
+#order-status.delivery-now { color: #00b894; }
+
+/* 9. Inline Style (Sẽ thắng trong file HTML - 1,0,0,0) */
+
+/* 10. Important (Phá vỡ mọi quy tắc - Cao nhất) */
+.highlight { color: #fdcb6e !important; }

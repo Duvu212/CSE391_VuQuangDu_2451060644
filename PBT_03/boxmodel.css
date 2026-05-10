@@ -1,0 +1,52 @@
+/* Bài B2 - Phần 1: Chứng minh Box Model */
+.box {
+    width: 300px;
+    padding: 20px;
+    border: 5px solid #2d3436;
+    margin: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.content-box {
+    box-sizing: content-box; /* Mặc định */
+    background-color: #ff7675; /* Màu đỏ coral */
+}
+
+.border-box {
+    box-sizing: border-box;
+    background-color: #0984e3; /* Màu xanh dương */
+}
+
+/* Bài B2 - Phần 2: Layout 3 cột ArtToy Store */
+.container {
+    width: 1000px;
+    margin: 50px auto;
+    background: #dfe6e9;
+    overflow: hidden; /* Clearfix cơ bản */
+}
+
+/* Sử dụng border-box cho các cột để tính toán chuẩn 1000px */
+.col-left, .col-mid, .col-right {
+    float: left;
+    box-sizing: border-box;
+}
+
+.col-left {
+    width: 250px;
+    padding: 15px;
+    background: #fab1a0;
+}
+
+.col-mid {
+    width: 500px;
+    padding: 20px;
+    background: #ffffff;
+    min-height: 200px;
+}
+
+.col-right {
+    width: 250px;
+    padding: 15px;
+    background: #ffeaa7;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="boxmodel.css">
+    <title>Thí nghiệm Box Model - Labubu & Milk Tea</title>
+</head>
+<body>
+    <h2 style="text-align: center; margin-top: 20px;">PHẦN 1: SO SÁNH BOX MODEL</h2>
+    
+    <div class="box content-box">
+        <h3>Trà Mãng Cầu Mix</h3>
+        <p>Kiểu: content-box</p>
+        <p>Kích thước thực tế sẽ bị cộng thêm padding và border.</p>
+    </div>
+
+    <div class="box border-box">
+        <h3>Sữa Tươi Trân Châu</h3>
+        <p>Kiểu: border-box</p>
+        <p>Kích thước luôn giữ chuẩn 300px bất kể padding/border.</p>
+    </div>
+    
+    <hr>
+
+    <h2 style="text-align: center; margin-top: 20px;">PHẦN 2: LAYOUT ARTTOY STORE (BORDER-BOX)</h2>
+    <div class="container">
+        <div class="col-left">
+            <h4>Menu Topping</h4>
+            <ul>
+                <li>Trân châu đen</li>
+                <li>Thạch sương sáo</li>
+                <li>Kem cheese</li>
+            </ul>
+        </div>
+        <div class="col-mid">
+            <h4>Sản phẩm Best Seller</h4>
+            <p>Chào mừng bạn đến với cửa hàng mô hình Labubu chính hãng. Tại đây chúng tôi áp dụng border-box cho toàn bộ layout để đảm bảo độ chính xác của các cột.</p>
+        </div>
+        <div class="col-right">
+            <h4>Flash Sale</h4>
+            <p>Giảm giá 50% cho dòng Molly Space vào khung giờ vàng!</p>
+        </div>
+    </div>
+</body>
+</html>

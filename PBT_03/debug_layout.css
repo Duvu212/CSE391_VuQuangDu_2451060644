@@ -1,0 +1,28 @@
+/* File này dùng để sửa lỗi layout ở Câu C1 */
+
+/* Cách sửa ưu tiên: Dùng border-box cho toàn bộ container */
+.container {
+    width: 960px;
+    margin: 0 auto;
+    background-color: #f1f2f6;
+    overflow: hidden; /* Clearfix */
+}
+
+.sidebar, .content {
+    /* Đây là dòng lệnh "giải cứu" layout bị vỡ */
+    box-sizing: border-box; 
+    float: left;
+    border: 1px solid #ccc;
+}
+
+.sidebar {
+    width: 300px;
+    padding: 20px;
+    background-color: #dfe6e9;
+}
+
+.content {
+    width: 660px;
+    padding: 30px;
+    background-color: #ffffff;
+}

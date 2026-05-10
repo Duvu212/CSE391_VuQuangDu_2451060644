@@ -1,13 +1,89 @@
-* { box-sizing: border-box; margin: 0; padding: 0; }
-body { font-family: 'Segoe UI', sans-serif; background-color: #f7f9fb; color: #2d3436; line-height: 1.7; }
-header { background: linear-gradient(135deg, #00b894, #00cec9); color: white; padding: 40px; text-align: center; }
-nav { background: #fff; padding: 15px; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-nav a { text-decoration: none; color: #636e72; margin: 0 20px; font-weight: 500; }
-nav a:hover { color: #00b894; border-bottom: 2px solid #00b894; }
-nav a.active { color: #00b894; font-weight: bold; }
-table { width: 85%; margin: 30px auto; border-collapse: collapse; background: white; border-radius: 8px; overflow: hidden; }
-th, td { padding: 15px; border: 1px solid #dfe6e9; text-align: left; }
-th { background-color: #00b894; color: white; }
-tr:nth-child(even) { background-color: #f1f2f6; }
-tr:hover { background-color: #e8f8f5; transition: 0.3s; }
-footer { background: #2d3436; color: #dfe6e9; padding: 25px; text-align: center; margin-top: 50px; }
+/* Reset cơ bản để kiểm soát Box Model */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f0f7f4; /* Màu nền xanh nhạt cực trend */
+    color: #2d3436;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, #00b894 0%, #00cec9 100%);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 184, 148, 0.2);
+}
+
+nav {
+    background: #ffffff;
+    padding: 15px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    text-decoration: none;
+    color: #636e72;
+    margin: 0 20px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+/* Hiệu ứng Hover và Active theo yêu cầu đề bài */
+nav a:hover {
+    color: #00b894;
+    text-decoration: underline;
+}
+
+nav a.active {
+    color: #00b894;
+    border-bottom: 2px solid #00b894;
+}
+
+/* Styling cho bảng danh sách ArtToy */
+table {
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+th, td {
+    padding: 15px 20px;
+    border: 1px solid #dfe6e9;
+    text-align: left;
+}
+
+th {
+    background-color: #00b894;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+/* Zebra striping và Hover row */
+tr:nth-child(even) {
+    background-color: #f9fdfc;
+}
+
+tr:hover {
+    background-color: #e8f8f5;
+}
+
+footer {
+    background: #2d3436;
+    color: #b2bec3;
+    padding: 30px;
+    text-align: center;
+    margin-top: 60px;
+}

@@ -20,3 +20,28 @@ Câu hỏi thêm: absolute tham chiếu body khi tất cả cha của nó đều
 4.Trường hợp 4: 3 cột. Hai cột bên cố định 200px, cột giữa co giãn linh hoạt.
 
 5.Trường hợp 5: 3 hàng. Hai hàng đầu 3 cột full. Hàng thứ 3 chỉ có 1 item ở vị trí cột đầu tiên bên trái.
+
+
+## Câu C1 — Khi nào dùng gì?
+1.Nav bar: Flexbox (Dàn hàng ngang đơn giản, khoảng cách linh hoạt).
+
+2.Instagram Grid: Grid (Lưới 2 chiều hoàn hảo, các ô vuông bằng chằn chặn).
+
+3.Blog Layout: Grid (Phân chia cột sidebar và main nội dung lớn).
+
+4.Footer: Flexbox (Dễ dàng căn chỉnh các nhóm link).
+
+5.Card nội dung: Flexbox (column) (Để dùng margin-top: auto cho nút bấm).
+
+## Câu C2 — Debug
+Lỗi 1: Thiếu display: flex; flex-direction: column; bên trong .card.
+
+Sửa: Thêm display: flex; flex-direction: column; cho .card và margin-top: auto cho .btn.
+
+Lỗi 2: Flexbox mặc định căn lề trái.
+
+Sửa: Thêm justify-content: center; align-items: center; vào .hero.
+
+Lỗi 3: Flex items mặc định có flex-shrink: 1.
+
+Sửa: Thêm flex-shrink: 0; cho .sidebar để giữ nguyên 250px.

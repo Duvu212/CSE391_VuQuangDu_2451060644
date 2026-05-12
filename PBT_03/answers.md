@@ -78,3 +78,6 @@ Trong file style.css, em đã sử dụng các selector:
 4. `.active` (Class)
 5. `nav a` (Descendant)
 6. `tr:nth-child(even)` (Pseudo-class)
+
+
+Linkvideo Phần D: https://drive.google.com/file/d/1YI3dT5lnCORf30DLDYYv1Cp5_nygJOw7/view?usp=sharing

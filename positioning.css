@@ -1,0 +1,33 @@
+/* Header luôn dính trên cùng */
+.header {
+    position: fixed; top: 0; width: 100%; height: 60px;
+    background: #1a1a1a; color: white; display: flex;
+    justify-content: space-between; align-items: center; z-index: 1000;
+}
+/* Sidebar dính khi cuộn */
+.sidebar {
+    position: sticky; top: 80px; width: 250px; background: #f4f4f4;
+}
+/* Badge HOT trên Card */
+.card {
+    position: relative; width: 200px; padding: 20px; border: 1px solid #ddd;
+}
+.badge {
+    position: absolute; top: -10px; right: -10px;
+    background: red; color: white; border-radius: 50%; padding: 5px 10px;
+}
+/* Nút cuộn lên */
+.scroll-top {
+    position: fixed; bottom: 20px; right: 20px;
+    width: 50px; height: 50px; border-radius: 50%;
+}
+
+body {
+    padding-top: 70px; /* Cao hơn chiều cao của header một chút */
+}
+
+
+.container {
+    display: flex; /* Đưa sidebar và content nằm dàn hàng ngang */
+    align-items: flex-start;
+}

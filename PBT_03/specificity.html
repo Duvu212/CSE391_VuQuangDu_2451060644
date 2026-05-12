@@ -4,21 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="specificity.css">
-    <title>Trận chiến Specificity - Đơn hàng Labubu</title>
+    <title>Thực hành CSS Specificity</title>
 </head>
 <body>
-    <div class="order-container">
-        <p id="order-status" class="status-text delivery-now highlight">
-            Đơn hàng Labubu Fall in Wild đang được giao đến bạn!
-        </p>
-    </div>
+    <p id="demo" class="text highlight">Hello World</p>
 
-    <div style="margin-top: 50px; padding: 20px; border: 1px dashed #ccc;">
-        <h3>Hướng dẫn kiểm tra:</h3>
-        <p>1. Mở file này trên trình duyệt.</p>
-        <p>2. Nhấn <strong>F12</strong> -> Thẻ <strong>Elements</strong>.</p>
-        <p>3. Chọn dòng thẻ <code>&lt;p&gt;</code> phía trên.</p>
-        <p>4. Nhìn sang cột <strong>Styles</strong> bên phải để xem các màu bị gạch bỏ và màu nào đang "thắng".</p>
+    <div style="margin-top: 50px; padding: 20px; border: 1px dashed #ccc; font-family: sans-serif;">
+        <h3>Hướng dẫn kiểm tra độ ưu tiên (Specificity):</h3>
+        <p>1. Nhấn <strong>F12</strong> (hoặc Inspect element).</p>
+        <p>2. Chọn thẻ <code>&lt;p id="demo"&gt;</code>.</p>
+        <p>3. Quan sát bảng <strong>Styles</strong>: Các rule có Specificity thấp hơn sẽ bị gạch ngang, màu của rule cao nhất sẽ được áp dụng.</p>
     </div>
 </body>
 </html>

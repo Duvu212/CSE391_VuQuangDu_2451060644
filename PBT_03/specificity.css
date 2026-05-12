@@ -1,28 +1,29 @@
-/* 1. Universal Selector (Thấp nhất: 0,0,0) */
-* { color: #ccc; }
+/* 1. Type selector (0,0,1) */
+p { color: grey; }
 
-/* 2. Element Selector (0,0,1) */
-p { color: #636e72; }
+/* 2. Hai Type selectors (0,0,2) */
+body p { color: silver; }
 
-/* 3. Class Selector (0,1,0) */
-.status-text { color: #2d3436; }
+/* 3. Class selector (0,1,0) */
+.text { color: brown; }
 
-/* 4. Combined Class (0,2,0) */
-.status-text.delivery-now { color: #e17055; }
+/* 4. Hai Class selectors (0,2,0) */
+.text.highlight { color: orange; }
 
-/* 5. Descendant Selector (0,2,1) */
-body .status-text.delivery-now { color: #d63031; }
+/* 5. Class + Type selector (0,1,1) */
+p.text { color: pink; }
 
-/* 6. ID Selector (1,0,0) */
-#order-status { color: #0984e3; }
+/* 6. Hai Class + Type selector (0,2,1) */
+p.text.highlight { color: blue; }
 
-/* 7. Element + ID (1,0,1) */
-p#order-status { color: #6c5ce7; }
+/* 7. ID selector (1,0,0) */
+#demo { color: green; }
 
-/* 8. ID + Class (1,1,0) */
-#order-status.delivery-now { color: #00b894; }
+/* 8. ID + Type selector (1,0,1) */
+p#demo { color: purple; }
 
-/* 9. Inline Style (Sẽ thắng trong file HTML - 1,0,0,0) */
+/* 9. ID + Class selector (1,1,0) */
+#demo.text { color: yellow; }
 
-/* 10. Important (Phá vỡ mọi quy tắc - Cao nhất) */
-.highlight { color: #fdcb6e !important; }
+/* 10. ID + 2 Classes + Type (1,2,1) */
+p#demo.text.highlight { color: red; }

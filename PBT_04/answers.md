@@ -77,3 +77,6 @@ Sửa: Thêm justify-content: center; align-items: center; vào .hero.
 Lỗi 3: Flex items mặc định có flex-shrink: 1.
 
 Sửa: Thêm flex-shrink: 0; cho .sidebar để giữ nguyên 250px.
+
+Phần D 
+link video: https://drive.google.com/file/d/179utrUeBwAmU5bwPQQKfBVAbShsOKRzW/view?usp=sharing

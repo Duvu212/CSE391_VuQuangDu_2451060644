@@ -1,0 +1,86 @@
+@import 'variables';
+@import 'mixins';
+@import 'components';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: $font-primary;
+  background: $bg-color;
+  color: $text-color;
+}
+
+.layout {
+  padding: $spacing-md;
+}
+
+.sidebar,
+.ads {
+  display: none;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $spacing-md;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: $dark-color;
+  color: $light-color;
+  margin-top: 20px;
+}
+
+@include respond-to(tablet) {
+  .header {
+    .logo {
+      font-size: 26px;
+    }
+
+    .hamburger {
+      display: none;
+    }
+
+    .nav-menu {
+      display: flex;
+      gap: 20px;
+    }
+  }
+
+  .sidebar {
+    display: block;
+    background: $light-color;
+    padding: $spacing-md;
+    border-radius: 12px;
+    margin-bottom: 20px;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@include respond-to(desktop) {
+  .layout {
+    display: grid;
+    grid-template-columns: 220px 1fr 180px;
+    gap: 20px;
+  }
+
+  .sidebar,
+  .ads {
+    display: block;
+    background: $light-color;
+    padding: $spacing-md;
+    border-radius: 12px;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
